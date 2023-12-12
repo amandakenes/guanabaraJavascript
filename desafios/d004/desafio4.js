@@ -1,19 +1,11 @@
-let produto = prompt("Que produto você está comprando?");
-
 function fun4() {
-  let pagamento = prompt(`Qual valor você deu para comprar o ${produto}?`);
-  let troco = pagamento - valor;
-  if (produto && valor && pagamento !== "") {
+  let produto = prompt("Que produto você está comprando?");
+  let valor = prompt(`Quanto custa ${produto}?`);
+  let pagamento = prompt(`Qual valor você deu para pagar ${produto}?`);
+  let troco = Number(pagamento) - Number(valor);
+  if (produto && valor && pagamento !== null) {
     alert(
-      `Você comprou um ${produto}.\nO valor do ${produto} é ${valor}. \nVocê deu ${pagamento} para pagar o ${produto}. \nO seu troco é de R${troco}`
+      `Você comprou ${produto} que custou R$${valor}.\nVocê deu R$${pagamento} para pagar e irá receber R$${troco} de troco.\nVolte sempre!`
     );
   }
-}
-
-function fun3() {
-    while(produto) {
-        let valor = Number(prompt(`Quanto o ${produto} custa?`));
-    } if (valor === '') {
-        alert('Insira um valor válido')
-    }
 }
