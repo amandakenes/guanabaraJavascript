@@ -18,7 +18,7 @@ function precoMudou() {
         <p>Uma variação de ${variacaoPorcentagem.toFixed(1)}% para cima.</p>
         `;
     } else if (precoAntigo > precoAtual) {
-      let baixaPreco = precoAtual - precoAntigo;
+      let baixaPreco = precoAntigo - precoAtual;
       let variacaoPorcentagem = parseFloat(
         ((precoAntigo - precoAtual) / precoAntigo) * 100
       );
