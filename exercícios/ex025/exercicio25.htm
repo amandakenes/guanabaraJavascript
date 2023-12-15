@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dados de um formulário</title>
+  </head>
+  <body>
+    <h1>Contando de 0 até um número positivo qualquer</h1>
+    <p>
+      Escolha o limite final para a contagem a partir do 0 (digite apenas
+      números positivos)
+    </p>
+    <section>
+      <form action="#" method="get">
+        <!-- O método GET envia os dados pela própria URL, durante a chamada -->
+        <label for="valorFinal">Valor Final</label>
+        <input
+          type="number"
+          name="valorFinal"
+          id="valorFinal"
+          placeholder="Apenas positivos"
+        />
+        <!-- O name de um objeto é mais usado por outras linguagens (como PHP), já o ID será mais usado por nós em JavaScript -->
+        <input
+          type="submit"
+          value="Contar"
+          formaction="javascript:contagem()"
+        />
+        <!-- Ao usar o FORMACTION, é preciso colocar javascript: antes do nome da função -->
+      </form>
+    </section>
+    <p id="saida">Preencha os dados acima e clique no botão</p>
+
+    <script src="exercicio25.js"></script>
+  </body>
+</html>
