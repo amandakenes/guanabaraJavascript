@@ -1,4 +1,4 @@
-let num = Math.floor(Math.random() * 100);
+let num = Math.floor(Math.random() * 100) + 1;
 
 function adivinhar() {
   let palpite = Number(prompt("Qual é o seu palpite?"));
